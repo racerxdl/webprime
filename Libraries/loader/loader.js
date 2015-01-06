@@ -58,7 +58,7 @@
         "size"      :   0,
         "loaded"    :   0,
         "ok"        :   false,
-        "callback"  :   this.scriptholder.callback
+        "callback"  :   this.scriptholder["callback"]
     };
 
     //  Load Scripts
@@ -82,6 +82,7 @@
 
 /**
  *  Loads an Javascript File
+ *  @param {string}
  */
  Loader.prototype.LoadJS =   function(filename)   {
 
@@ -98,6 +99,7 @@
 
 /**
  *  Loads an CSS File
+ *  @param {string}
  */
  Loader.prototype.LoadCSS    =   function(filename)   {
 
@@ -121,6 +123,7 @@
 
 /**
  *  Displays an error message at console, if debug is enabled.
+ *  @param {string}
  */
  Loader.prototype.error  =   function(message)   {
 
@@ -133,7 +136,8 @@
 }
 
 /**
- * Displays an log message at console, if debug is enabled. 
+ *  Displays an log message at console, if debug is enabled. 
+ *  @param {string}
  */
  Loader.prototype.log  =   function(message)   {
 
