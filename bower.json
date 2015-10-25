@@ -1,0 +1,29 @@
+{
+  "name": "webprime",
+  "version": "1.0.0",
+  "homepage": "https://github.com/racerxdl/webprime",
+  "authors": [
+    "Lucas Teske"
+  ],
+  "description": "Web Version of Prime Visualizer",
+  "keywords": [
+    "pump it up",
+    "prime",
+    "fiesta",
+    "piuvisual",
+    "ucsvisual"
+  ],
+  "dependencies" : {
+    "jquery"  : "*"
+  },
+  "license": "GPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "spec",
+    "example"
+  ]
+}

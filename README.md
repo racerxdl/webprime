@@ -7,3 +7,15 @@
 ========
 
 Remake of Pump It Up Prime for Web
+
+
+To test install node.js and npm on your machine and them run:
+
+```bash
+npm install
+npm install -g bower
+bower install
+sudo grunt dev
+```
+
+The webprime should be acessible at http://localhost:8082
