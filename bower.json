@@ -14,7 +14,8 @@
     "ucsvisual"
   ],
   "dependencies" : {
-    "jquery"  : "*"
+    "jquery"  : "*",
+    "requestAnimationFrame" : "*"
   },
   "license": "GPL-3.0",
   "ignore": [
