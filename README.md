@@ -14,8 +14,11 @@ To test install node.js and npm on your machine and them run:
 ```bash
 npm install
 npm install -g bower
+npm install -g grunt-cli
 bower install
 sudo grunt dev
 ```
+
+For windows you will also need [git](https://git-scm.com/)
 
 The webprime should be acessible at http://localhost:8082
