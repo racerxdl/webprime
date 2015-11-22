@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 
     concat: {
       dist: {
-        src: ["3rdparty/jquery/dist/jquery.min.js", "3rdparty/requestAnimationFrame/app/requestAnimationFrame.js", "lib/*.js" ],
+        src: ["3rdparty/jquery/dist/jquery.min.js", "3rdparty/jpak/dist/jpak.js", "3rdparty/requestAnimationFrame/app/requestAnimationFrame.js", "lib/*.js" ],
         dest: "dist/webprime.min.js"
       }
     },
@@ -49,14 +49,14 @@ module.exports = function(grunt) {
 
     watch: {
       dev: {
-        files: [ "Gruntfile.js", "lib/*.js", "3rdparty/requestAnimationFrame/app/requestAnimationFrame.js", "3rdparty/jquery/dist/jquery.min.js" ],
+        files: [ "Gruntfile.js", "lib/*.js", "3rdparty/jpak/dist/jpak.js", "3rdparty/requestAnimationFrame/app/requestAnimationFrame.js", "3rdparty/jquery/dist/jquery.min.js" ],
         tasks: [ "jshint", "concat:dist", "clean:temp" ],
         options: {
           atBegin: true
         }
       },
       min: {
-        files: [ "Gruntfile.js", "lib/*.js", "3rdparty/requestAnimationFrame/app/requestAnimationFrame.js", "3rdparty/jquery/dist/jquery.min.js"],
+        files: [ "Gruntfile.js", "lib/*.js", "3rdparty/jpak/dist/jpak.js", "3rdparty/requestAnimationFrame/app/requestAnimationFrame.js", "3rdparty/jquery/dist/jquery.min.js"],
         tasks: [ "jshint", "concat:dist", "clean:temp", "uglify:dist" ],
         options: {
           atBegin: true
