@@ -12,7 +12,7 @@ All 21 other `lib/*.js` files are untouched original code — game logic, timing
 
 ## Build system
 
-Replaced Grunt ~0.4 + Bower with Vite. jQuery from npm. jpak coming soon as npm package.
+Vite-based. jQuery and @teskevirtualsystem/jpak from npm.
 
 ```bash
 npm install
@@ -32,7 +32,7 @@ npm run build     # production build to dist/
 
 - Runtime: jquery (npm), @teskevirtualsystem/jpak (npm)
 - Dev: Vite ^5
-- No Bower, no Grunt, no global installs needed.
+
 
 ## Testing
 

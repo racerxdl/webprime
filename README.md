@@ -54,7 +54,7 @@ npm run deploy    # build + deploy to GitHub Pages
 - 22 ES5 lib files (`lib/*.js`) with game logic — untouched from 2015 original
 - Custom element `<web-prime>` (v1 — fixed from the original v0)
 - Canvas 2D + WebGL rendering
-- jQuery + JPAK from npm (no Bower, no Grunt)
+- jQuery + JPAK from npm
 - UCS and JPAKNX chart formats supported
 
 ## Deploy to GitHub Pages
