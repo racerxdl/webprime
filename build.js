@@ -10,7 +10,7 @@ execSync(`rm -rf "${dist}"/*`, { stdio: 'inherit' });
 
 // Copy using shell (avoids node fs permission quirks)
 const rules = [
-  `cp index.html "${dist}/"`,
+  `cp index.html ucs.html nx.html "${dist}/"`,
   `cp -r lib "${dist}/"`,
   `cp -r ucs "${dist}/"`,
   `[ -d datapack ] && cp -r datapack "${dist}/" || true`,

@@ -4,40 +4,98 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WebPrime</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.25em;
+      background: linear-gradient(135deg, #e91e63, #9c27b0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    p.subtitle {
+      color: #888;
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+    .cards {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      width: 280px;
+      text-decoration: none;
+      color: #fff;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: #e91e63;
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+    .card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      color: #888;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .card .tag {
+      display: inline-block;
+      background: #e91e63;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .card.nx .tag { background: #9c27b0; }
+  </style>
 </head>
 <body>
-  <a href="https://github.com/racerxdl/webprime" style="position:absolute;top:0;left:0;z-index:100;background:#c00;color:#fff;text-decoration:none;font:bold 13px sans-serif;padding:3px 40px 3px 8px;transform:rotate(-90deg) translateX(-100%);transform-origin:top left;">Fork me on GitHub</a>
-  <center>
-    <!-- Runtime dependencies -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/@teskevirtualsystem/jpak/dist/jpak.min.js"></script>
-
-    <!-- All lib files in original concat order -->
-    <script src="./lib/atools.js"></script>
-    <script src="./lib/basedrawer.js"></script>
-    <script src="./lib/constants.js"></script>
-    <script src="./lib/drawer.js"></script>
-    <script src="./lib/effectbank.js"></script>
-    <script src="./lib/glbg.js"></script>
-    <script src="./lib/imagetools.js"></script>
-    <script src="./lib/logger.js"></script>
-    <script src="./lib/looper.js"></script>
-    <script src="./lib/nxparser.js"></script>
-    <script src="./lib/objects.js"></script>
-    <script src="./lib/scene.js"></script>
-    <script src="./lib/sentinel.js"></script>
-    <script src="./lib/skin.js"></script>
-    <script src="./lib/sound.js"></script>
-    <script src="./lib/step.js"></script>
-    <script src="./lib/struct.js"></script>
-    <script src="./lib/ucs.js"></script>
-    <script src="./lib/video.js"></script>
-    <script src="./lib/webgldrawer.js"></script>
-    <script src="./lib/webgl.js"></script>
-    <script src="./lib/webprime.js"></script>
-
-    <web-prime id="hue" file-name="ucs/CS131.ucs" song-id="S12" song-type="UCS" graphical-mode="HD" debug-mode></web-prime>
-    <!--<web-prime id="hue" file-name="nx/1308.jpak" song-mode="DOUBLE" song-level="20" song-type="JPAKNX" override-noteskin="3" webgl-background="BGA_OFF" graphical-mode="HD"></web-prime>-->
-  </center>
+  <div class="container">
+    <h1>WebPrime</h1>
+    <p class="subtitle">Pump It Up Prime Web Visualizer</p>
+    <div class="cards">
+      <a href="ucs.html" class="card">
+        <div class="icon">&#x1f3b5;</div>
+        <h2>UCS Visualizer</h2>
+        <p>Load and visualize UCS charts with step timing, combo tracking, and BPM changes.</p>
+        <span class="tag">CS131</span>
+      </a>
+      <a href="nx.html" class="card nx">
+        <div class="icon">&#x1f3ae;</div>
+        <h2>NX JPAK Visualizer</h2>
+        <p>Load JPAK-packed NX charts with HD skins, note skins, and WebGL backgrounds.</p>
+        <span class="tag">1308</span>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
